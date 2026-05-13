@@ -148,6 +148,13 @@ nav { position: sticky; top: 0; z-index: 100; background: var(--white); box-shad
 .btn-form { width: 100%; padding: 14px; background: var(--primary); color: var(--white); border: none; border-radius: 30px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background .2s, transform .15s; margin-top: 8px; }
 .btn-form:hover { background: var(--primary-dark); transform: translateY(-1px); }
 
+/* Neutralizza il bordo rosso nativo del browser sui campi required */
+input:invalid, select:invalid, textarea:invalid { box-shadow: none; }
+input:user-invalid, select:user-invalid, textarea:user-invalid {
+  border-color: var(--primary) !important;
+  box-shadow: none;
+}
+
 /* FOOTER */
 footer { background: var(--text); color: rgba(255,255,255,.7); padding: 48px 24px 32px; font-size: .88rem; }
 .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px; margin-bottom: 32px; }
