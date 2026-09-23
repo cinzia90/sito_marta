@@ -4,19 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dott.ssa Marta Reggio – Biologa Nutrizionista | Lecce e Online</title>
-  <meta name="description" content="Dott.ssa Marta Reggio, biologa nutrizionista a Lecce e Cavallino. Nutrizione clinica, sportiva e funzionale. Percorsi personalizzati in studio e online." />
+  <meta name="description" content="Dott.ssa Marta Reggio, biologa nutrizionista a Lecce e Cavallino. Nutrizione clinica, educazione alimentare e salute ormonale femminile. Percorsi personalizzati in studio e online." />
+  <link rel="icon" type="image/png" href="img/logo-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <!-- NAVIGAZIONE -->
+<div class="top-bar">
+  <span class="site-credit">Created by <a href="https://instagram.com/rosatocinzia" target="_blank" rel="noopener">Cinzia Rosato</a></span>
+</div>
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#home" class="nav-logo">Marta <span>Reggio</span></a>
+    <a href="#home" class="nav-logo">
+      <img src="img/logo-icon.png" alt="Logo Marta Reggio" class="nav-logo-img" />
+      <div class="nav-wordmark">
+        <p class="name">Marta Reggio</p>
+        <p class="role">Biologa Nutrizionista</p>
+      </div>
+    </a>
     <ul class="nav-links">
+      <li><a href="#approccio">Approccio</a></li>
       <li><a href="#chi-sono">Chi sono</a></li>
       <li><a href="#percorsi">Percorsi</a></li>
       <li><a href="#dove-ricevo">Studi</a></li>
@@ -29,6 +40,7 @@
     </div>
   </div>
   <ul class="nav-mobile hidden" id="nav-mobile">
+    <li><a href="#approccio" onclick="closeMenu()">Approccio</a></li>
     <li><a href="#chi-sono" onclick="closeMenu()">Chi sono</a></li>
     <li><a href="#percorsi" onclick="closeMenu()">Percorsi</a></li>
     <li><a href="#dove-ricevo" onclick="closeMenu()">Studi</a></li>
@@ -40,28 +52,67 @@
 
 <!-- HERO -->
 <section id="home">
+  <div class="hero-bg-photo" role="img" aria-label="Dott.ssa Marta Reggio"></div>
+  <div class="hero-bg-fade"></div>
   <div class="hero-inner">
-    <div class="hero-text">
-      <span class="hero-tag">Biologa Nutrizionista · Lecce &amp; Online</span>
+    <div class="hero-text" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>Biologa Nutrizionista · Salute Femminile</span></div>
       <h1 class="hero-title">
-        Scienza, ascolto<br>ed <em>empatia</em><br>per il tuo benessere
+        Scienza, ascolto<br>ed <em>equilibrio</em><br>per il tuo benessere
       </h1>
       <p class="hero-sub">
-        Piani nutrizionali personalizzati per ritrovare un rapporto sano con il cibo —
-        senza privazioni, senza sensi di colpa, costruiti intorno alla tua vita reale.
+        Piani nutrizionali personalizzati per ritrovare l'equilibrio ormonale e un
+        rapporto sereno con il cibo — senza privazioni, senza sensi di colpa, costruiti
+        intorno alla tua vita reale.
       </p>
       <div class="hero-ctas">
         <a href="https://www.miodottore.it/z/AxaHVw" target="_blank" rel="noopener" class="btn-primary">Prenota una visita</a>
         <a href="#percorsi" class="btn-outline">Scopri i percorsi</a>
       </div>
-    </div>
-    <div style="position:relative;">
-      <div class="hero-photo">
-        <img src="img/foto-marta.png" alt="Dott.ssa Marta Reggio – Biologa Nutrizionista" />
+      <div class="hero-trust"><strong>⭐ 9</strong> recensioni verificate su MioDottore</div>
+      <div class="hero-locationline">
+        <div class="dash"></div>
+        <p>Lecce · Puglia · Online</p>
       </div>
-      <div class="hero-badge">
-        <strong>⭐ 9</strong>
-        <span>Recensioni<br>verificate</span>
+    </div>
+  </div>
+</section>
+
+<!-- APPROCCIO -->
+<section id="approccio">
+  <div class="approccio-bg-photo" role="img" aria-label="Dott.ssa Marta Reggio"></div>
+  <div class="approccio-bg-fade"></div>
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>L'Approccio</span></div>
+      <h2 class="section-title">Un'alimentazione che rispetta<br>il ritmo naturale <em>del tuo corpo</em></h2>
+      <p>
+        La nutrizione non è una privazione. È un atto di ascolto profondo verso se stesse. La
+        filosofia che guida ogni consulenza nasce da una convinzione semplice ma potente: ogni
+        corpo è unico, e merita un piano costruito attorno alla sua fisiologia, alle sue abitudini
+        e ai suoi obiettivi reali.
+      </p>
+      <p>
+        Niente diete drastiche, niente regole imposte. Solo un percorso sostenibile, basato sulla
+        scienza, pensato per durare nel tempo e costruire un rapporto sereno, consapevole e
+        nutriente con il cibo — in ogni fase della vita.
+      </p>
+    </div>
+    <div class="pillars-grid compact">
+      <div class="pillar-card" data-reveal>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /><path d="M6.453 15h11.094" /><path d="M8.5 2h7" /></svg></div>
+        <h3>Scienza</h3>
+        <p>Percorsi basati su evidenze scientifiche aggiornate, mai su mode passeggere o restrizioni generiche.</p>
+      </div>
+      <div class="pillar-card" data-reveal>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></div>
+        <h3>Ascolto</h3>
+        <p>Ogni storia è unica: ascolto prima di proporre, nel rispetto dei tuoi ritmi e delle tue esigenze reali.</p>
+      </div>
+      <div class="pillar-card" data-reveal>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18" /><path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /><path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M7 21h10" /></svg></div>
+        <h3>Equilibrio</h3>
+        <p>Un rapporto sereno e sostenibile con il cibo, integrato davvero nella tua vita — senza privazioni.</p>
       </div>
     </div>
   </div>
@@ -71,31 +122,29 @@
 <section id="chi-sono">
   <div class="container">
     <div class="chisono-inner">
-      <div class="chisono-photo">
-        <img src="img/foto-marta2.png" alt="Dott.ssa Marta Reggio" />
+      <div class="chisono-photo" data-reveal>
+        <img src="img/foto-marta-chisono.jpg" alt="Dott.ssa Marta Reggio" />
       </div>
-      <div class="chisono-text">
-        <span class="section-tag">Chi sono</span>
+      <div class="chisono-text" data-reveal>
+        <div class="eyebrow"><div class="dash"></div><span>Chi sono</span></div>
         <h2 class="section-title">Ciao, sono <em>Marta Reggio</em></h2>
         <p>
-          Sono una biologa nutrizionista e credo che la nutrizione debba unire scienza, ascolto
-          ed empatia. Non esiste la dieta uguale per tutti: ogni piano che costruisco parte dalla
-          tua storia, dalle tue abitudini e dagli obiettivi che vuoi raggiungere.
+          Mi chiamo Marta Reggio e la nutrizione è la mia scelta, ogni giorno. Non è solo il mio
+          lavoro: è il modo in cui guardo le persone, le ascolto e me ne prendo cura. È il mio
+          linguaggio, il mio strumento, la mia missione: aiutarti a sentirti bene nel tuo corpo,
+          davvero.
         </p>
         <p>
-          Ho alle spalle anni di ricerca microbiologica su microbiota e probiotici — una base
-          scientifica che porto ogni giorno nel lavoro clinico con i miei pazienti. Ho pubblicato
-          due studi peer-reviewed sulla salute gastrointestinale e metabolica.
-        </p>
-        <p>
-          Ricevo a Lecce e a Cavallino, e sono disponibile anche online per chi si trova
-          in qualsiasi parte d'Italia.
+          Credo profondamente che comprendere il proprio corpo sia il primo passo per prendersene
+          cura in modo autentico e consapevole. Per questo trasformo le conoscenze scientifiche
+          sull'alimentazione in percorsi semplici, personalizzati e sostenibili, che rispettano
+          la tua unicità e la tua vita reale.
         </p>
         <ul class="qualifiche">
-          <li>Laurea Magistrale in Biologia Molecolare e Cellulare – Università di Bologna</li>
-          <li>Master in Dietologia e Nutrizione – Humanitas &amp; Università San Raffaele, Roma</li>
+          <li>Dottoressa in Biologia Molecolare e Cellulare</li>
+          <li>Abilitata all'esercizio della professione di Biologa Nutrizionista</li>
+          <li>Master di II livello in Dietologia e Nutrizione</li>
           <li>Iscritta all'Ordine dei Biologi di Puglia e Basilicata – Sez. A n. PuB_A5405</li>
-          <li>Nutrizione base, clinica e sportiva · Studio e online</li>
         </ul>
         <a href="https://www.miodottore.it/z/AxaHVw" target="_blank" rel="noopener" class="miodottore-btn">
           Vedi il mio profilo su MioDottore →
@@ -108,15 +157,33 @@
 <!-- PERCORSI -->
 <section id="percorsi">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Percorsi</span>
+    <div class="section-header" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>Il Percorso</span><div class="dash"></div></div>
       <h2 class="section-title">Come posso <em>aiutarti</em></h2>
-      <p>Ogni percorso è costruito sulle tue esigenze, il tuo stile di vita e i tuoi obiettivi.</p>
+      <p>Un percorso in due tempi, costruito sulle tue esigenze, il tuo stile di vita e i tuoi obiettivi.</p>
     </div>
+
+    <div class="steps-grid">
+      <div class="step-card" data-reveal>
+        <span class="step-num">01</span>
+        <h3>Prima Visita</h3>
+        <p>Un incontro approfondito per conoscerti davvero. Analizziamo insieme la composizione corporea, esploriamo le tue abitudini alimentari, lo stile di vita, i tuoi obiettivi e la tua storia clinica. Nessun giudizio, solo ascolto e scienza.</p>
+        <span class="step-meta">Durata: circa 60-75 minuti · da €102</span>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-card" data-reveal>
+        <span class="step-num">02</span>
+        <h3>Consegna e Controlli</h3>
+        <p>Ricevi il tuo piano nutrizionale personalizzato con idee per pasti, colazioni bilanciate e strategie pratiche per la quotidianità. Sessioni di controllo periodiche per adattare il percorso alla tua evoluzione — perché il corpo cambia, e il piano deve farlo con lui.</p>
+        <span class="step-meta">Controlli mensili · Supporto continuativo · da €50</span>
+      </div>
+    </div>
+
+    <p class="spec-secondary-title">Altri servizi</p>
     <div class="cards-grid">
 
-      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">💬</div>
+      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;" data-reveal>
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></div>
         <h3>Consulenza gratuita</h3>
         <p class="card-desc">
           Una chiamata conoscitiva per capire le tue esigenze e scoprire come posso aiutarti.
@@ -129,36 +196,8 @@
         <div class="card-price">Gratuita</div>
       </a>
 
-      <a href="#contatti" class="card featured" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">🌿</div>
-        <h3>Prima visita nutrizionale</h3>
-        <p class="card-desc">
-          Anamnesi approfondita, valutazione della composizione corporea e
-          piano nutrizionale personalizzato su misura per te.
-        </p>
-        <div class="card-meta">
-          <span>In studio (Lecce o Cavallino)</span>
-          <span>Online disponibile</span>
-        </div>
-        <div class="card-price">da €102</div>
-      </a>
-
-      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">📊</div>
-        <h3>Visita di controllo</h3>
-        <p class="card-desc">
-          Monitoraggio dei progressi, aggiustamento del piano alimentare
-          e supporto motivazionale lungo il percorso.
-        </p>
-        <div class="card-meta">
-          <span>In studio o online</span>
-          <span>Educazione nutrizionale inclusa</span>
-        </div>
-        <div class="card-price">€50</div>
-      </a>
-
-      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">⚖️</div>
+      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;" data-reveal>
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18" /><path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /><path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M7 21h10" /></svg></div>
         <h3>Bioimpedenziometria</h3>
         <p class="card-desc">
           Analisi precisa della composizione corporea: massa grassa, massa magra,
@@ -171,8 +210,8 @@
         <div class="card-price">€30</div>
       </a>
 
-      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">💻</div>
+      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;" data-reveal>
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" /><path d="M20.054 15.987H3.946" /></svg></div>
         <h3>Visita online</h3>
         <p class="card-desc">
           Tutto il supporto di una prima visita o di un controllo,
@@ -185,8 +224,8 @@
         <div class="card-price">€50 – €70</div>
       </a>
 
-      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">🏠</div>
+      <a href="#contatti" class="card" style="text-decoration:none;color:inherit;" data-reveal>
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></div>
         <h3>Visita domiciliare</h3>
         <p class="card-desc">
           Per chi preferisce ricevere la consulenza comodamente a casa propria.
@@ -210,46 +249,75 @@
 
 <!-- SPECIALIZZAZIONI -->
 <section id="specializzazioni">
+  <div class="bg-blob blob-primary" style="width:340px;height:340px;top:-80px;right:-100px;"></div>
+  <div class="bg-blob blob-primary" style="width:280px;height:280px;bottom:-60px;left:-80px;opacity:.6;"></div>
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Aree di specializzazione</span>
+    <div class="section-header" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>Specializzazioni</span><div class="dash"></div></div>
       <h2 class="section-title">Di cosa mi <em>occupo</em></h2>
-      <p>Dalla nutrizione di base alla clinica specialistica: un supporto professionale per ogni esigenza.</p>
+      <p>Quattro pilastri che uniscono scienza, ascolto e cura della persona, in ogni fase della vita.</p>
     </div>
+    <div class="pillars-grid featured">
+
+      <div class="pillar-card" data-reveal>
+        <span class="pillar-num">01</span>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg></div>
+        <span class="pillar-tag">Ormonale</span>
+        <h3>Salute Ormonale Femminile</h3>
+        <p class="pillar-lead">Il corpo in armonia con i suoi ritmi</p>
+        <p class="pillar-desc">Supporto nutrizionale specifico per ovaio policistico (PCOS), endometriosi, amenorrea, irregolarità del ciclo, fertilità, gravidanza, menopausa, lipedema e linfedema. Ogni fase merita una strategia alimentare su misura.</p>
+        <div class="pillar-hoverline"></div>
+      </div>
+
+      <div class="pillar-card" data-reveal>
+        <span class="pillar-num">02</span>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" /><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" /></svg></div>
+        <span class="pillar-tag">Educazione</span>
+        <h3>Educazione Alimentare</h3>
+        <p class="pillar-lead">Per adulti e bambini</p>
+        <p class="pillar-desc">Percorsi personalizzati per comprendere e correggere le abitudini scorrette e sfatare i falsi miti, per il raggiungimento di uno stato di benessere fisico e mentale.</p>
+        <div class="pillar-hoverline"></div>
+      </div>
+
+      <div class="pillar-card" data-reveal>
+        <span class="pillar-num">03</span>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /><path d="M8 15a6 6 0 0 0 12 0v-3" /><circle cx="20" cy="10" r="2" /></svg></div>
+        <span class="pillar-tag">Clinica</span>
+        <h3>Nutrizione Clinica</h3>
+        <p class="pillar-lead">Cura per il proprio corpo</p>
+        <p class="pillar-desc">Piani alimentari e gestione nutrizionale specifica per condizioni fisiologiche (gravidanza, allattamento, menopausa) e patologiche (gonfiore addominale, IBS, SIBO, reflusso, dislipidemie, insulino-resistenza, diabete, celiachia, allergia al nichel, ipertensione, cardiopatie…).</p>
+        <div class="pillar-hoverline"></div>
+      </div>
+
+      <div class="pillar-card" data-reveal>
+        <span class="pillar-num">04</span>
+        <div class="pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" /><path d="m2.5 21.5 1.4-1.4" /><path d="m20.1 3.9 1.4-1.4" /><path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" /><path d="m9.6 14.4 4.8-4.8" /></svg></div>
+        <span class="pillar-tag">Sportiva</span>
+        <h3>Nutrizione Sportiva</h3>
+        <p class="pillar-lead">Performance e ricomposizione corporea</p>
+        <p class="pillar-desc">Piani calibrati per ottimizzare l'energia, accelerare il recupero muscolare e migliorare la performance fisica — in palestra, sul campo o nella vita quotidiana.</p>
+        <div class="pillar-hoverline"></div>
+      </div>
+
+    </div>
+
+    <p class="spec-secondary-title">Altri ambiti di consulenza</p>
     <div class="spec-grid">
 
-      <div class="spec-item">
-        <div class="spec-icon">🏃</div>
-        <h4>Nutrizione sportiva</h4>
-        <p>Piani alimentari per ottimizzare la performance e il recupero atletico.</p>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-icon">⚕️</div>
-        <h4>Nutrizione clinica</h4>
-        <p>Gestione nutrizionale di diabete, colesterolo, patologie tiroidee, celiachia, IBS e GERD.</p>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-icon">🔬</div>
+      <div class="spec-item" data-reveal>
+        <div class="spec-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8" /><path d="M3 22h18" /><path d="M14 22a7 7 0 1 0 0-14h-1" /><path d="M9 14h2" /><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></svg></div>
         <h4>Microbiota intestinale</h4>
         <p>Approccio scientifico alla salute intestinale, probiotici e disturbi digestivi.</p>
       </div>
 
-      <div class="spec-item">
-        <div class="spec-icon">🌸</div>
-        <h4>PCOS e ormoni</h4>
-        <p>Nutrizione specifica per insulino-resistenza, PCOS, endometriosi e squilibri ormonali.</p>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-icon">⚖️</div>
+      <div class="spec-item" data-reveal>
+        <div class="spec-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 17h6v-6" /><path d="m22 17-8.5-8.5-5 5L2 7" /></svg></div>
         <h4>Gestione del peso</h4>
         <p>Percorsi sostenibili di dimagrimento senza privazioni, con risultati duraturi nel tempo.</p>
       </div>
 
-      <div class="spec-item">
-        <div class="spec-icon">👶</div>
+      <div class="spec-item" data-reveal>
+        <div class="spec-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" /><path d="M15 12h.01" /><path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" /><path d="M9 12h.01" /></svg></div>
         <h4>Nutrizione pediatrica</h4>
         <p>Consulenze nutrizionali anche per bambini e adolescenti in fase di crescita.</p>
       </div>
@@ -261,24 +329,24 @@
 <!-- DOVE RICEVO -->
 <section id="dove-ricevo">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Dove ricevo</span>
+    <div class="section-header" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>Sede</span><div class="dash"></div></div>
       <h2 class="section-title">Vieni a trovarmi o<br><em>scrivimi online</em></h2>
       <p>Due studi in provincia di Lecce e disponibilità in videoconsulto per tutta Italia.</p>
     </div>
     <div class="luoghi-grid">
 
-      <div class="luogo-card">
-        <div class="luogo-icon">🏥</div>
+      <div class="luogo-card" data-reveal>
+        <div class="luogo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></div>
         <span class="luogo-tag">Lecce</span>
-        <h3>Manuthera Studio Fisioterapico</h3>
-        <address>Via Filippo Gala 22<br>73100 Lecce (LE)</address>
-        <p>Studio multidisciplinare nel cuore di Lecce. Visite per adulti e bambini.</p>
-        <a href="https://maps.google.com/?q=Via+Filippo+Gala+22+Lecce" target="_blank" rel="noopener" style="font-size:.88rem;font-weight:600;color:var(--primary);">Vedi su mappa →</a>
+        <h3>Studio a Lecce</h3>
+        <address>Lecce (LE)</address>
+        <p>Ricevo nel cuore di Lecce, su appuntamento. Visite per adulti e bambini.</p>
+        <a href="https://maps.google.com/?q=Lecce" target="_blank" rel="noopener" style="font-size:.88rem;font-weight:600;color:var(--primary);">Vedi su mappa →</a>
       </div>
 
-      <div class="luogo-card">
-        <div class="luogo-icon">🏥</div>
+      <div class="luogo-card" data-reveal>
+        <div class="luogo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></div>
         <span class="luogo-tag">Cavallino</span>
         <h3>Check Up Centre</h3>
         <address>Via Federico II, 6<br>73020 Cavallino (LE)</address>
@@ -286,8 +354,8 @@
         <a href="https://maps.google.com/?q=Via+Federico+II+6+Cavallino+Lecce" target="_blank" rel="noopener" style="font-size:.88rem;font-weight:600;color:var(--primary);">Vedi su mappa →</a>
       </div>
 
-      <div class="luogo-card">
-        <div class="luogo-icon">💻</div>
+      <div class="luogo-card" data-reveal>
+        <div class="luogo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" /><path d="M20.054 15.987H3.946" /></svg></div>
         <span class="luogo-tag">Tutta Italia</span>
         <h3>Visita Online</h3>
         <address>Videochiamata<br>Da dove vuoi</address>
@@ -302,11 +370,11 @@
 <!-- TESTIMONIANZE -->
 <section id="testimonianze">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Recensioni</span>
+    <div class="section-header" data-reveal>
+      <div class="eyebrow"><div class="dash"></div><span>Recensioni</span><div class="dash"></div></div>
       <h2 class="section-title">Cosa dicono i miei <em>pazienti</em></h2>
     </div>
-    <div class="reviews-meta">
+    <div class="reviews-meta" data-reveal>
       <span class="rating">9/9</span>
       <div class="rating-info">
         <div class="reviews-stars">⭐⭐⭐⭐⭐</div>
@@ -315,7 +383,7 @@
     </div>
     <div class="reviews-grid">
 
-      <div class="review-card">
+      <div class="review-card" data-reveal>
         <div class="review-header">
           <div class="review-avatar">AT</div>
           <div>
@@ -331,7 +399,7 @@
         </p>
       </div>
 
-      <div class="review-card">
+      <div class="review-card" data-reveal>
         <div class="review-header">
           <div class="review-avatar">MR</div>
           <div>
@@ -347,7 +415,7 @@
         </p>
       </div>
 
-      <div class="review-card">
+      <div class="review-card" data-reveal>
         <div class="review-header">
           <div class="review-avatar">GS</div>
           <div>
@@ -372,12 +440,29 @@
   </div>
 </section>
 
+<!-- CTA FINALE -->
+<section id="cta-finale">
+  <div class="bg-blob blob-primary" style="width:360px;height:360px;top:-100px;right:-80px;"></div>
+  <div class="container">
+    <div class="cta-box" data-reveal>
+      <div class="cta-photo left" role="img" aria-label="Dott.ssa Marta Reggio"></div>
+      <div class="cta-photo right" role="img" aria-label="Dott.ssa Marta Reggio"></div>
+      <div class="eyebrow"><div class="dash"></div><span>Inizia il tuo cambiamento oggi</span><div class="dash"></div></div>
+      <h2 class="section-title">Prenditi cura della tua salute<br>e ritrova il tuo <em>equilibrio</em>.</h2>
+      <div class="hero-ctas">
+        <a href="https://www.miodottore.it/z/AxaHVw" target="_blank" rel="noopener" class="btn-primary">Prenota una consulenza</a>
+        <a href="https://wa.me/393385793214" target="_blank" rel="noopener" class="btn-outline">Contattami su WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTATTI -->
 <section id="contatti">
   <div class="container">
     <div class="contatti-inner">
-      <div class="contatti-info">
-        <span class="section-tag">Contatti</span>
+      <div class="contatti-info" data-reveal>
+        <div class="eyebrow"><div class="dash"></div><span>Contatti</span></div>
         <h2 class="section-title">Inizia il tuo <em>percorso</em></h2>
         <p>
           Scrivimi per qualsiasi informazione o prenota direttamente su MioDottore.
@@ -385,35 +470,35 @@
         </p>
         <div class="contact-items">
           <div class="contact-item">
-            <div class="contact-icon">📧</div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></div>
             <div>
               <h4>Email</h4>
               <a href="mailto:dott.ssa.martareggio@gmail.com">dott.ssa.martareggio@gmail.com</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📱</div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></div>
             <div>
               <h4>WhatsApp</h4>
               <a href="https://wa.me/393385793214" target="_blank" rel="noopener">+39 338 579 3214</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📸</div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg></div>
             <div>
               <h4>Instagram</h4>
               <a href="https://instagram.com/nutrizionista_martareggio" target="_blank" rel="noopener">@nutrizionista_martareggio</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📍</div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></div>
             <div>
               <h4>Studi</h4>
-              <p>Manuthera, Via Filippo Gala 22 – Lecce<br>Check Up Centre, Via Federico II 6 – Cavallino</p>
+              <p>Lecce<br>Check Up Centre, Via Federico II 6 – Cavallino</p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">🗓️</div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></svg></div>
             <div>
               <h4>Prenota su MioDottore</h4>
               <a href="https://www.miodottore.it/z/AxaHVw" target="_blank" rel="noopener">miodottore.it/z/AxaHVw</a>
@@ -422,7 +507,7 @@
         </div>
       </div>
 
-      <div class="contact-form">
+      <div class="contact-form" data-reveal>
         <h3>Mandami un messaggio</h3>
         <form id="contact-form">
           <div class="form-row">
@@ -470,12 +555,19 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="nav-logo">Marta <span>Reggio</span></div>
-      <p>Biologa nutrizionista a Lecce e Cavallino.<br>Nutrizione base, clinica e sportiva.<br>Studio e online.</p>
+      <div class="nav-logo">
+        <img src="img/logo-icon.png" alt="Logo Marta Reggio" class="nav-logo-img" />
+        <div class="nav-wordmark">
+          <p class="name">Marta Reggio</p>
+          <p class="role">Biologa Nutrizionista</p>
+        </div>
+      </div>
+      <p>Biologa nutrizionista a Lecce e Cavallino.<br>Nutrizione clinica, educazione alimentare e salute ormonale femminile.<br>Studio e online.</p>
     </div>
     <div class="footer-links">
       <h4>Navigazione</h4>
       <ul>
+        <li><a href="#approccio">Approccio</a></li>
         <li><a href="#chi-sono">Chi sono</a></li>
         <li><a href="#percorsi">Percorsi</a></li>
         <li><a href="#specializzazioni">Specializzazioni</a></li>
@@ -499,10 +591,11 @@
     <span>
       Ordine dei Biologi di Puglia e Basilicata – Sez. A n. PuB_A5405
       &nbsp;|&nbsp;
-      <a href="#" style="color:inherit;">Privacy Policy</a>
+      <a href="privacy-policy.html" style="color:inherit;">Privacy Policy</a>
       &nbsp;|&nbsp;
-      <a href="#" style="color:inherit;">Cookie Policy</a>
+      <a href="cookie-policy.html" style="color:inherit;">Cookie Policy</a>
     </span>
+    <span class="site-credit">Created by <a href="https://instagram.com/rosatocinzia" target="_blank" rel="noopener">Cinzia Rosato</a></span>
   </div>
 </footer>
 

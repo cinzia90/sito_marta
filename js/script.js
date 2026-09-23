@@ -6,6 +6,24 @@ function closeMenu() {
   document.getElementById('nav-mobile').classList.add('hidden');
 }
 
+// Animazioni di comparsa allo scroll (progressive enhancement:
+// il contenuto resta visibile finché JS non attiva esplicitamente l'animazione)
+if ('IntersectionObserver' in window) {
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  revealEls.forEach(function(el) { el.classList.add('reveal-init'); });
+
+  var revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  revealEls.forEach(function(el) { revealObserver.observe(el); });
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
   link.addEventListener('click', function(e) {
     var target = document.querySelector(this.getAttribute('href'));
@@ -40,7 +58,7 @@ if (form) {
 
     var btn = form.querySelector('.btn-form');
     btn.textContent = '✓ Apertura WhatsApp…';
-    btn.style.background = '#3D6050';
+    btn.style.background = '#A6612E';
     setTimeout(function() {
       btn.textContent = 'Invia messaggio →';
       btn.style.background = '';
