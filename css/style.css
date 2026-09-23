@@ -75,9 +75,6 @@ h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; letter-s
 }
 
 /* TOP BAR (credito) */
-.top-bar { position: fixed; top: 68px; right: 14px; z-index: 90; pointer-events: none; }
-.top-bar .site-credit { font-size: .65rem; color: var(--text-light); opacity: .6; pointer-events: auto; }
-.top-bar .site-credit a { color: var(--text-light); }
 
 /* NAV */
 nav { position: sticky; top: 0; z-index: 100; background: var(--white); box-shadow: 0 2px 16px rgba(46,31,15,.08); padding: 0 24px; }
