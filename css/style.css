@@ -399,7 +399,8 @@ footer { background: var(--primary); color: rgba(255,255,255,.85); padding: 48px
   .nav-mobile li { list-style: none; }
   .nav-mobile a { display: block; padding: 14px 0; font-size: 1rem; font-weight: 500; color: var(--text-light); border-bottom: 1px solid var(--bg-section); }
   .nav-mobile .btn-nav { margin-top: 16px; display: inline-block; padding: 13px 28px; text-align: center; }
-  .hero-inner { padding: 60px 24px; }
+  #home { min-height: auto; align-items: flex-start; }
+  .hero-inner { padding: 40px 24px; }
   .hero-text { max-width: none; }
   .hero-bg-photo { width: 100%; opacity: .18; -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,.85) 55%); mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,.85) 55%); }
   .contatti-inner { grid-template-columns: 1fr; gap: 40px; }
