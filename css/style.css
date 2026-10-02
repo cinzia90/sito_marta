@@ -390,6 +390,8 @@ footer { background: var(--primary); color: rgba(255,255,255,.85); padding: 48px
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .nav-inner { height: 72px; }
+  .nav-logo-img { width: 56px; height: 56px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-mobile { display: flex; flex-direction: column; gap: 0; background: var(--white); border-top: 1px solid var(--bg-section); padding: 12px 24px 24px; }
