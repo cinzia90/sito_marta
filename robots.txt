@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /storie/
+
+Sitemap: https://martareggionutrizionista.it/sitemap.xml
